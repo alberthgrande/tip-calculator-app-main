@@ -1,0 +1,16 @@
+@use "../abstracts/colors" as color;
+@use "../abstracts/fonts" as font;
+body {
+  background-color: color.$light-grayish-cyan;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: font.$font-size;
+  font-family: font.$font-family-Space-Mono;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+}
