@@ -1,0 +1,17 @@
+:root {
+  /* color Primary */
+
+  --primay-Strong-cyan: hsl(172, 67%, 45%);
+
+  /* color Neutral */
+  --neutral-Very-dark-cyan: hsl(183, 100%, 15%);
+  --neutral-Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --neutral-Grayish-cyan: hsl(184, 14%, 56%);
+  --neutral-Light-grayish-cyan: hsl(185, 41%, 84%);
+  --neutral-Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --neutral-White: hsl(0, 0%, 100%);
+
+  /* Typography */
+
+  --typography-Font-size: 24px;
+}
