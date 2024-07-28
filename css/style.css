@@ -6,4 +6,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background: var(--neutral-Light-grayish-cyan);
+}
+
+.tip-container {
+  background: var(--neutral-White);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.tip-computation {
+  background: var(--neutral-Very-dark-cyan);
 }
