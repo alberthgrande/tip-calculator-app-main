@@ -1,6 +1,7 @@
 @import url("reset.css");
 @import url("root.css");
 @import url("media.css");
+@import url("input-component.css");
 body {
   height: 100vh;
   display: flex;
@@ -16,21 +17,31 @@ body {
 input[type="text"] {
   width: 100%;
   text-align: right;
+  font-size: 1.25rem;
 }
 
 #bill, #numberOfPeople {
   padding: 0.5rem;
   margin-top: 0.5rem;
+  background: var(--neutral-Very-light-grayish-cyan);
+  outline: none;
+  border: none;
 }
 
+#customPercent {
+  text-align: center;
+}
 
 .tip-container {
   background: var(--neutral-White);
   padding: 2rem;
-  border-radius: 20px;
 
   width: 100%;
   max-width: 920px;
+}
+
+.logo_splitter {
+  margin: 0 auto;
 }
 
 .tip-function-container {
@@ -55,6 +66,7 @@ input[type="text"] {
   width: 100%;
   max-width: 120px;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 .tip-computation-container {
