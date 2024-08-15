@@ -22,20 +22,22 @@
     <main>
       <h1 class="header">SPLI<br />TTER</h1>
       <div class="tip-container">
-        <section class="tip-function">
+        <section class="tip-function-container">
           <div>
             <h3 class="header">Bill</h3>
             <input type="text" id="bill" placeholder="0" />
           </div>
 
-          <div>
+          <div class="tip-percentage">
             <h3 class="header">Select Tip %</h3>
-            <button id="fivePercent">5%</button>
-            <button id="tenPercent">10%</button>
-            <button id="fifteenPercent">15%</button>
-            <button id="Percent">25%</button>
-            <button id="Percent">50%</button>
-            <input type="text" id="customPercent" placeholder="Custom" />
+            <div class="tip-percentage-function">
+              <button class="tip-percentage-input" id="fivePercent">5%</button>
+              <button class="tip-percentage-input" id="tenPercent">10%</button>
+              <button class="tip-percentage-input" id="fifteenPercent">15%</button>
+              <button class="tip-percentage-input" id="Percent">25%</button>
+              <button class="tip-percentage-input" id="Percent">50%</button>
+              <input class="tip-percentage-input" type="text" id="customPercent" placeholder="Custom" />
+            </div>
           </div>
 
           <div>
@@ -44,14 +46,21 @@
           </div>
         </section>
 
-        <section class="tip-computation">
-          Tip Amount / person
-          <br />
+        <section class="tip-computation-container">
 
-          Total / person
-          <br />
+          <div>
+            <div class="tip-amount">
+              <p>Tip Amount <br>/ person</p>
+              <p>$0.00</p>
+            </div>
+            
+            <div class="tip-amount">
+              <p>Total <br>/ person</p>
+              <p>$0.00</p>
+            </div>
+          </div>
 
-          <button>Reset</button>
+          <button class="tip-reset" id="reset">Reset</button>
         </section>
       </div>
       <br />
