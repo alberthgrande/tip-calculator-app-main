@@ -12,6 +12,8 @@ body {
 
   font-family: "Space Mono", monospace;
   font-weight: 700;
+
+  box-sizing: border-box;
 }
 
 input[type="text"] {
@@ -26,6 +28,13 @@ input[type="text"] {
   background: var(--neutral-Very-light-grayish-cyan);
   outline: none;
   border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#bill:hover, #numberOfPeople:hover  {
+  border: 2px solid #CE7667;
+  padding: calc(0.5rem - 2px); /* Adjust padding to compensate for the border */
 }
 
 #customPercent {
@@ -82,6 +91,7 @@ input[type="text"] {
 .tip-amount {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 2rem 0;
 }
 
@@ -93,4 +103,25 @@ input[type="text"] {
   cursor: pointer;
   text-transform: uppercase;
   font-size: 1.25rem;
+}
+
+.tip-amount_label {
+  color: var(--neutral-White);
+}
+.tip-amount_label-span {
+  color: var(--neutral-Grayish-cyan);
+}
+.tip-amount_value {
+  font-size: 2.75rem;
+  color: var(--neutral-Light-grayish-cyan);
+}
+
+/* number-of-people */
+
+.number-of-people {
+  display: flex;
+  justify-content: space-between;
+}
+.error-msg {
+  color: #CE7667;
 }
