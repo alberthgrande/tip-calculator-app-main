@@ -10,8 +10,8 @@
 .input-container .input-icon {
     position: absolute;
     left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 60%;
+    /* transform: translateY(-50%); */
     /* width: 16px; Adjust the size as needed */
     height: auto;
     pointer-events: none; /* Make sure the icon doesn't block clicks on the input */
