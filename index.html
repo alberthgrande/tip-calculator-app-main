@@ -43,7 +43,10 @@
           </div>
 
           <div class="input-container">
-            <h3 class="header">Number of People</h3>
+            <div class="number-of-people">
+              <h3 class="header">Number of People</h3>
+              <span class="error-msg">Can't be zero</span>
+            </div>
             <input type="text" id="numberOfPeople" placeholder="0" />
             <img src="./images/icon-dollar.svg" class="input-icon" alt="Dollar Icon">
           </div>
@@ -53,13 +56,13 @@
 
           <div>
             <div class="tip-amount">
-              <p>Tip Amount <br>/ person</p>
-              <p>$0.00</p>
+              <p class="tip-amount_label">Tip Amount <br><span class="tip-amount_label-span">/ person</span></p>
+              <p class="tip-amount_value">$0.00</p>
             </div>
             
             <div class="tip-amount">
-              <p>Total <br>/ person</p>
-              <p>$0.00</p>
+              <p class="tip-amount_label">Total <br><span class="tip-amount_label-span">/ person</span></p>
+              <p class="tip-amount_value">$0.00</p>
             </div>
           </div>
 
