@@ -33,11 +33,11 @@
           <div class="tip-percentage">
             <h3 class="header">Select Tip %</h3>
             <div class="tip-percentage-function">
-              <button class="tip-percentage-input" id="fivePercent">5%</button>
-              <button class="tip-percentage-input" id="tenPercent">10%</button>
-              <button class="tip-percentage-input" id="fifteenPercent">15%</button>
-              <button class="tip-percentage-input" id="Percent">25%</button>
-              <button class="tip-percentage-input" id="Percent">50%</button>
+              <button class="tip-percentage-input input-percent" value="5">5%</button>
+              <button class="tip-percentage-input input-percent" value="10">10%</button>
+              <button class="tip-percentage-input input-percent" value="15">15%</button>
+              <button class="tip-percentage-input input-percent" value="25">25%</button>
+              <button class="tip-percentage-input input-percent" value="50">50%</button>
               <input class="tip-percentage-input" type="text" id="customPercent" placeholder="Custom" />
             </div>
           </div>
@@ -57,12 +57,12 @@
           <div>
             <div class="tip-amount">
               <p class="tip-amount_label">Tip Amount <br><span class="tip-amount_label-span">/ person</span></p>
-              <p class="tip-amount_value">$0.00</p>
+              <p class="tip-amount_value" id="tipAmount">$0.00</p>
             </div>
             
             <div class="tip-amount">
               <p class="tip-amount_label">Total <br><span class="tip-amount_label-span">/ person</span></p>
-              <p class="tip-amount_value">$0.00</p>
+              <p class="tip-amount_value" id="tipTotal">$0.00</p>
             </div>
           </div>
 
