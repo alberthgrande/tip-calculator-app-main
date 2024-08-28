@@ -32,13 +32,31 @@ input[type="text"] {
   box-sizing: border-box;
 }
 
+
 #bill:hover, #numberOfPeople:hover  {
-  border: 2px solid #CE7667;
+  /* border: 2px solid #CE7667; */
+  border: 2px solid var(--primay-Strong-cyan);
   padding: calc(0.5rem - 2px); /* Adjust padding to compensate for the border */
+}
+
+#numberOfPeople.error-border {
+  border: 2px solid #CE7667;
+  padding: calc(0.5rem - 2px);
 }
 
 #customPercent {
   text-align: center;
+  background: var(--neutral-Very-light-grayish-cyan);
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+#customPercent:hover  {
+  /* border: 2px solid #CE7667; */
+  border: 2px solid var(--primay-Strong-cyan);
+  padding: calc(0.5rem - 2px); /* Adjust padding to compensate for the border */
 }
 
 .tip-container {
@@ -115,6 +133,16 @@ input[type="text"] {
    font-size: 1.25rem;
 }
 
+.input-percent.selected {
+   background: var(--primay-Strong-cyan);
+   color: var(--neutral-Very-dark-cyan);
+   border-radius: 5px;
+   outline: none;
+   border: none;
+   font-size: 1.25rem;
+}
+
+
 .tip-amount_label {
   color: var(--neutral-White);
 }
@@ -134,4 +162,5 @@ input[type="text"] {
 }
 .error-msg {
   color: #CE7667;
+  display: none;
 }
