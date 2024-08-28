@@ -122,6 +122,12 @@ input[type="text"] {
   text-transform: uppercase;
   font-size: 1.25rem;
   background: var(--primay-Strong-cyan);
+  color: var(--neutral-Very-dark-cyan);
+}
+
+.tip-reset:hover {
+  background: var(--neutral-Light-grayish-cyan);
+  color: var(--neutral-Very-dark-cyan);
 }
 
 .input-percent {
