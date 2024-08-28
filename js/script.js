@@ -30,9 +30,11 @@ function calculateTip(tipPercent) {
   
   if (isNaN(bill) || bill <= 0 || isNaN(numberOfPeople) || numberOfPeople <= 0) {
     errorMsg.style.display = "inline";
+    numberOfPeopleInput.classList.add("error-border");
     return;
   } else {
     errorMsg.style.display = "none";
+    numberOfPeopleInput.classList.remove("error-border");
   }
   
   const tipAmountValue = (bill * (tipPercent / 100)) / numberOfPeople;
@@ -47,6 +49,15 @@ inputPercentButtons.forEach(button => {
   button.addEventListener("click", (event) => {
     const tipPercent = parseFloat(event.target.value);
     calculateTip(tipPercent);
+
+    // Remove the 'selected' class from all buttons
+    for (const btn of inputPercentButtons) {
+      btn.classList.remove("selected");
+    }
+
+    // Add the 'selected' class to the clicked button
+    event.currentTarget.classList.add("selected");
+
   });
 });
 
